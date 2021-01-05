@@ -21,7 +21,7 @@ Here is a configuration example.
     #endCommit: end commit id of the project。Example： endCommit=324e22accf457edc996971bc97f5474349cd7c4c
     #traceCommit: if the value is 'overall-detection', all the blobfiles will be extracted. If the value is the same with endCommit, only those blobfiles which have the same absolute file with the files in the endCommit revision。Example： traceCommit=324e22accf457edc996971bc97f5474349cd7c4c
     #threadNum: thread number, used for DB insertion。Example： threadNum=10
-    #projectName: project name, which is used for DB table name。 Example： projectName=redis  则数据库中对应的表名为MeasureIndex_redis
+    #projectName: project name, which is used for DB table name。 Example： projectName=redis, then table name is:MeasureIndex_redis
     #language： the language of the project。 Example：language=c
     #suffix: suffix name the project files，seperated by comma. Example：suffix=c,h
     #ip: ip of the database。 Example：ip=localhost
@@ -31,8 +31,8 @@ Here is a configuration example.
     #sepNum: the size of the token file, 100000000 is suggested. Example：sepNum=200000000
     #keyWordList: key word for extracting bug fix commit message
     #exeName: clone detection script。 Example：exeName=executable_gpu_linux
-    #commitInterval: if the value is 1, all the blob files will be extrated. Otherwise, the program extract blob file according the the interval number 填写示范：commitInterval=1
-    #extractedPath: specify certain file path which we want to analyse, seperated by comma。 填写示范：extractedPath=src/
+    #commitInterval: if the value is 1, all the blob files will be extrated. Otherwise, the program extract blob file according the the interval number Example：commitInterval=1
+    #extractedPath: specify certain file path which we want to analyse, seperated by comma。 Example：extractedPath=src/
     #blobSnapshotMapResult, Example：blobSnapshotMapResult=../map_result2.txt
     #
     #Fri Sep 25 16:16:51 CST 2020
